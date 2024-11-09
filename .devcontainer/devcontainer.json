@@ -8,5 +8,9 @@
 	},
 	// 起動時の実行コマンド
 	// 今回はnodejsのパッケージをインストール
-	"postCreateCommand": "yarn install"
+	"postCreateCommand": "yarn install",
+	// ホスト側のファイルをコンテナにマウントする
+	"mounts": [
+		"source=/Users/yokotatomo/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	]
 }
