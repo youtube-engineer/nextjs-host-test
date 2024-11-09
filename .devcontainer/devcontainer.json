@@ -1,0 +1,12 @@
+{
+	"name": "nextjs-host-test",
+	// dockerイメージ
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+	// nodeやpythonなどのインストール設定
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	// 起動時の実行コマンド
+	// 今回はnodejsのパッケージをインストール
+	"postCreateCommand": "yarn install"
+}
